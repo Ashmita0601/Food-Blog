@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face {
+    font-family: Candy;
+    src: url("ScaryCandy-PersonalUse.ttf");
+}
+li,p{
+    font-family: Candy;
+    font-size: 30px;
+    display: inline;
+    margin-right: 30px;
+
+}
+li:hover{
+    font-size: 35px;
+}
+.logo{
+    font-size: 50px;
+    font-style: bold;
+    border-bottom: 4px solid red;
+    text-shadow: -5px 8px 8px yellow;
+    letter-spacing: 4px;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: center;
+
+}
+
+img.icon {
+    margin-left: 2%;
+    margin-top: 22px;
+    display: inline;
+    height: 60px;
+    width: 60px;
+    border-radius: 0%;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+            transition:         transform .8s ease-in-out;
+}
+img.icon:hover {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+}
+
