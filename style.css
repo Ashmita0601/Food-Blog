@@ -96,7 +96,7 @@ img.icon:hover {
     width: 105%;
     padding-left: 30px;
 }
-.recipe1:hover,.recipe2:hover,.desert:hover{
+.recipe1:hover,.recipe2:hover,.desert:hover,.accordion:hover{
     box-shadow: 0 0 10px black;
 }
 .r-title,.r-description{
@@ -114,11 +114,17 @@ img.icon:hover {
     font-weight: 100;
     letter-spacing: 1px;
 }
-.pizza,.biryani{
+.pizza,.biryani,.pancake{
     margin:0 auto;
     border: none;
     width: 700px;
     height: 400px;
+}
+.sl-drink,.peda{
+    margin:0 auto;
+    border: none;
+    width: 200px;
+    height: 300px;
 }
 .pizza{
     background: url("images/pizza.png");
@@ -127,6 +133,21 @@ img.icon:hover {
 }
 .biryani{
     background: url(images/biryani.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pancake{
+    background: url(images/pancake.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+.sl-drink{
+    background: url(images/strawberry.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.peda{
+    background: url(images/peda.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -190,3 +211,54 @@ img.icon:hover {
     box-shadow: 0 0 10px black;
 }
 
+.accordion {
+    width:min-content;
+    /* width: 80%;
+    max-width: 650px; */
+    margin: 20px 70px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ccc;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-header {        /*explore more*/
+    display: block;
+    padding: 15px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+}
+
+.accordion-header:hover {
+    background-color: #ddd;
+}
+
+.accordion-content {
+    max-height: auto;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: #fff;
+    padding: 0px 25px;
+}
+
+.accordion-content p {
+    margin: 15px 0;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ .accordion-content {
+    max-height: 0px;
+    padding: 0px;
+    border-top: 1px solid #ccc;
+}
