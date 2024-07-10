@@ -1,6 +1,8 @@
 body{
     margin: 0;
     padding: 0;
+    background:linear-gradient(#F6F6F6,#E9E4E4)
+    
 }
 
 
@@ -8,14 +10,14 @@ body{
     font-family: Candy;
     src: url("ScaryCandy-PersonalUse.ttf");
 }
-li,p{
+.nav-content,.logo{
     font-family: Candy;
     font-size: 30px;
     display: inline;
     margin-right: 30px;
 
 }
-li:hover{
+.nav-content:hover{
     font-size: 35px;
 }
 .logo{
@@ -46,4 +48,85 @@ img.icon:hover {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
 }
-
+.banner-border{
+    display: flex;
+    justify-content: space-between;
+    margin:20px auto;
+    height: 500px;
+    width: 1500px;
+    border: none;
+}
+.txt-box{
+    margin: auto;
+    width: 390px;
+}
+.author{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+.intro{
+    display: flex;
+}
+.intro1{
+    margin:9px 6px;
+   
+}
+.name,.date{
+    margin: 3px;
+}
+.wel-txt{
+    margin: 0;
+}
+.welcome{
+    box-shadow: -5px 5px 8px black;
+    padding-bottom: 15px;
+    margin:20px auto;
+    word-spacing: 8px;
+    text-align: center;
+    font-family: Candy;
+    font-size: 35px;
+    height: 40px;
+    width: 1500px;
+    border: none;
+}
+.recipe1,.recipe2{
+    margin-left: 1%;
+    border: none;
+    width: 65%;
+    padding-left: 30px;
+}
+.recipe1:hover,.recipe2:hover{
+    box-shadow: 0 0 10px black;
+}
+.r-title,.r-description{
+    text-align: center;
+}
+.r-title{
+    font-size: 30px;
+    padding-top: 30px;
+}
+.r-title:hover{
+    text-shadow: 0 0 8px yellow;
+}
+.r-description{
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+.pizza,.biryani{
+    margin:0 auto;
+    border: 1px solid black;
+    width: 700px;
+    height: 400px;
+}
+.pizza{
+    background: url("images/pizza.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.biryani{
+    background: url(images/biryani.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
