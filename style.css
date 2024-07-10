@@ -262,3 +262,21 @@ input[type="checkbox"]:checked ~ .accordion-content {
     padding: 0px;
     border-top: 1px solid #ccc;
 }
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(#F6F6F6,#E9E4E4);
+}
+.footer-icons{
+    display: flex;
+}
+.footer-icons li{
+    display: inline;
+    list-style: none;
+    margin-right: 20px;
+}
+.footer-icons li a:hover img{
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+}
