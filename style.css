@@ -93,20 +93,20 @@ img.icon:hover {
 .recipe1,.recipe2{
     margin-left: 1%;
     border: none;
-    width: 65%;
+    width: 105%;
     padding-left: 30px;
 }
-.recipe1:hover,.recipe2:hover{
+.recipe1:hover,.recipe2:hover,.desert:hover{
     box-shadow: 0 0 10px black;
 }
 .r-title,.r-description{
     text-align: center;
 }
-.r-title{
+.r-title,.d-title{
     font-size: 30px;
     padding-top: 30px;
 }
-.r-title:hover{
+.r-title:hover,.d-title:hover{
     text-shadow: 0 0 8px yellow;
 }
 .r-description{
@@ -116,7 +116,7 @@ img.icon:hover {
 }
 .pizza,.biryani{
     margin:0 auto;
-    border: 1px solid black;
+    border: none;
     width: 700px;
     height: 400px;
 }
@@ -130,3 +130,63 @@ img.icon:hover {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.desert{
+    text-align: center;
+    border: none;
+    width: 35%;
+    margin-top: 25px;
+}
+.food-content{
+    display: flex; 
+    justify-content: space-between;
+   
+}
+.dessert-img{
+    
+    height: 400px;
+    width: 400px;
+    margin: 4px auto;
+    border: none;
+    border-radius: 6px;
+}
+#d1{
+    background: url("images/icecream.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#d2{
+    background: url("images/lassi.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#d3{
+    background: url("images/biscuit.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#d4{
+    background: url("images/cookie.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#d5{
+    background: url("images/donot.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.d-txt{
+    margin: 5px;
+    letter-spacing: 2px;
+    font-family: Candy;
+    font-size: 30px;
+}
+.d-effect{
+    padding:10px;
+    margin: 0px 50px 40px 50px;
+    border: none;
+}
+.d-effect:hover{
+    box-shadow: 0 0 10px black;
+}
+
